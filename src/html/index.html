@@ -3,29 +3,54 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TO-DO App</title>
+    <title>pingFlaming</title>
     <meta name="description" content="to-do">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 
 <body>
-    <section class="login-panel">
-    <div class="log-in">
-        <form action="/src/html/main.html">
-            <h2>Log in</h2>
-            <div class="log-input">
-                <input type="text" placeholder="login">
+    <section class="nav-bar" id="navBar">
+        <div>
+            <input id="search" type="text" name="search" placeholder="Szukaj...">
+        </div>
+        <div>
+            <img src="./xxx.jpg">
+        </div>
+        <div>
+            <span class="user-nick" id="nickName">...</span>
+            <img class="user-photo" id="avatar">
+        </div>
+    </section>
+
+    <section class="tag-bar" id="tag">
+        <div>
+            
+            <ul>
+                <li><h3>Tags:</h3></li>
+                <li><a href="">ping</a></li>
+                <li><a href="">Flaming</a></li>
+                <li><a href="">ToDoList</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="main-list" id="mainList">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div>
+                        <title>Title1</title>
+                        <span id="date">25 grudnia 2019</span>
+                        <p class="content">Content, Task, ToDo</p>
+                        <div class="list-button" id="listButton">
+                            <button type="button" id="edit"><img src=".png"></button>
+                            <button type="button" id="delete"><img src=".png"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pass-input">
-                <input type="password" placeholder="password">
-            </div>
-            <div class="btn-submit">
-                <input type="submit" value="Submit">
-            </div>
-            <a href="http://localhost:3000/registration" >Create an account</a>
-        </form>
-    </div>
+        </div>
     </section>
 
     <script src="/src/js/script.js"></script>
