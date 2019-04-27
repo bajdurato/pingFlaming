@@ -1,0 +1,19 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "Aplikacja to-do",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomasz Jurczyński",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "consolidate": "^0.15.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.3",
+    "mustache": "^3.0.1",
+    "nodemon": "^1.18.11"
+  }
+}
