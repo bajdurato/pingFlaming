@@ -6,6 +6,7 @@
     <title>pingFlaming</title>
     <meta name="description" content="to-do">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 
 
@@ -27,10 +28,10 @@
         <div>
             
             <ul>
-                <li>Tags:</li>
-                <li><a href="">ping</a></li>
-                <li><a href="">Flaming</a></li>
-                <li><a href="">ToDoList</a></li>
+                <h3>Tagi:</h3>
+                <li>ping</li>
+                <li>Flaming</li>
+                <li>ToDoList</li>
             </ul>
         </div>
     </section>
@@ -38,8 +39,8 @@
     <section class="main-list" id="mainList">
         <div>
             <title>Title1</title>
-            <span id="date">25 grudnia 2019</span>
-             <p class="content">Content, Task, ToDo</p>
+            <div class="list-header">Do zrobienia</div>
+            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
             <div class="list-button" id="listButton">
                 <button type="button" id="edit"><img src=".png"></button>
                 <button type="button" id="delete"><img src=".png"></button>
@@ -47,8 +48,8 @@
         </div>
         <div>
             <title>Title1</title>
-            <span id="date">26 grudnia 2019</span>
-            <p class="content">Content, Task, ToDo</p>
+            <div class="list-header">W trakcie</div>
+            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
             <div class="list-button" id="listButton">
                 <button type="button" id="edit"><img src=".png"></button>
                 <button type="button" id="delete"><img src=".png"></button>
@@ -56,8 +57,8 @@
         </div>
         <div>
             <title>Title1</title>
-            <span id="date">27 grudnia 2019</span>
-            <p class="content">Content, Task, ToDo</p>
+            <div class="list-header">Gotowe</div>
+            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
             <div class="list-button" id="listButton">
                 <button type="button" id="edit"><img src=".png"></button>
                 <button type="button" id="delete"><img src=".png"></button>
@@ -65,14 +66,17 @@
         </div>
         <div>
             <title>Title1</title>
-            <span id="date">28 grudnia 2019</span>
-            <p class="content">Content, Task, ToDo</p>
+            <div class="list-header">Dodaj nową kolumnę</div>
+            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
             <div class="list-button" id="listButton">
                 <button type="button" id="edit"><img src=".png"></button>
                 <button type="button" id="delete"><img src=".png"></button>
             </div>
         </div>
     </section>
+    <div class="add">
+        <button type="button" id="create"><img src="../icons/simple.png"></button>
+    </div>
 
     <script src="/src/js/script.js"></script>
 </body>
