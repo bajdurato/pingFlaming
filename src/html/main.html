@@ -77,8 +77,41 @@
     <div class="add">
         <button type="button" id="create"><img src="../icons/simple.png"></button>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="../icons/cross.png" class="close">
+                <h3>Dodaj nowe zadanie</h3>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <span>Tytuł</span>
+                    <input type="text" name="tasktitle">
+                    <span>Opis</span>
+                    <textarea name="description" maxlength='140'></textarea>
+                    <span>Status</span>
+                    <select>
+                        <option value="default">Default</option>
+                    </select>
+                    <span>Tagi</span>
+                    <input type="text" name="addtag">
+                    <span>Nadaj kolor</span>
+                    <div>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                        <button type="button"></button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="cancel">Anuluj</button>
+                <button type="button" id="submit">Zatwierdź zmiany</button>
 
-    <script src="/src/js/script.js"></script>
+            </div>
+        </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 
 </html>

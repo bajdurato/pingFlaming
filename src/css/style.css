@@ -83,3 +83,65 @@ li {
     background: #ce5b7c;
     border-radius: 50px;
 }
+
+/* Modal */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    border-radius: 8px;
+    width: 53%;
+    /* Could be more or less, depending on screen size */
+    height: auto;
+}
+
+.modal-header {
+    background-color: #969dad;
+    box-sizing:border-box;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-header h3{
+    font-family: FiraSans;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fefefe;
+}
+
+.modal-body form {
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    color: #969dad;
+}
+
