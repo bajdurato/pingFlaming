@@ -15,35 +15,35 @@
         <img src="../img/logo-bez-flaminga.png">
     </div>
     <section class="login-panel">
-        <div class="log-in">
+        <div class="log-in" id="login">
             <img class="flaming-left" src="../img/flaming-left.png">
-            <form action="/src/html/.html">
+            <form action="/src/html/main.html">
                 <h4>Ping Flaming to narzędzie ułatwiające organizację Twojej pracy,<br>życia i wszystkiego, co potrzebuje organizacji.<br>Zaloguj się i działaj!</h4>
                 <div>
                     <label for="login">Login</label>
                 </div>
                 <div class="log-input">
-                    <input type="login" placeholder="Podaj swój login">
+                    <input id="ll" type="login" placeholder="Podaj swój login">
                 </div>
                 <div>
                     <label for="password">Hasło</label>
                 </div>
                 <div class="pass-input">
-                    <input type="password" placeholder="Podaj swoje hasło">
+                    <input id="lp" type="password" placeholder="Podaj swoje hasło">
                 </div>
                 <div class="links">
-                    <a href="http://localhost:3000/registration">Zarejestruj się!</a>
-                    <a href="http://localhost:3000/forgot-password">Przypomnij hasło</a>
+                    <a href="../html/reminder.html">Przypomnij hasło</a>
+                    <a href="../html/register.html">Zarejestruj się!</a>
                 </div>
                 <div class="btn-login">
-                    <button type="button" id="log-in">Zaloguj</button>
+                    <button type="button" onclick="login()" id="log-in">Zaloguj</button>
                 </div>
             </form>
             <img class="flaming-right" src="../img/flaming-right.png">
         </div>
     </section>
 
-    <script src="/src/js/script.js"></script>
+    <script src="../js/script-log.js"></script>
 </body>
 
 </html>
