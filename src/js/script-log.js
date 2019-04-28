@@ -5,17 +5,12 @@
         var regBox = document.getElementById("register");
         var forgetBox = document.getElementById("forgot");
 
-        var loginTab = document.getElementById("");
-        var regTab = document.getElementById("");
-
-
-
         function register(){
             event.preventDefault();
 
-            var login = document.getElementById("").value;
-            var password = document.getElementById("").value;
-            var passwordRetype = document.getElementById("").value;
+            var login = document.getElementById("re").value;
+            var password = document.getElementById("rp").value;
+            var passwordRetype = document.getElementById("rpp").value;
 
             if (login == ""){
                 alert("Wpisz login.");
@@ -39,9 +34,9 @@
 
                 alert(login + "  Zarejestrowałeś się. \nTeraz zaloguj się!");
 
-                document.getElementById("").value ="";
-                document.getElementById("").value="";
-                document.getElementById("").value="";
+                document.getElementById("re").value ="";
+                document.getElementById("rp").value="";
+                document.getElementById("rpp").value="";
             }
             else{
                 alert(login + " Czy jesteś zarejestrowany?");
@@ -51,8 +46,8 @@
         function login(){
             event.preventDefault();
 
-            var login = document.getElementById("se").value;
-            var password = document.getElementById("sp").value;
+            var login = document.getElementById("ll").value;
+            var password = document.getElementById("lp").value;
 
             var i = loginArray.indexOf(login);
 
@@ -75,8 +70,8 @@
             else {
                 alert(login + " Jesteś zalogowany. \n Witamy!");
 
-                document.getElementById("").value ="";
-                document.getElementById("").value="";
+                document.getElementById("ll").value ="";
+                document.getElementById("lp").value="";
                 return ;
             }
 
