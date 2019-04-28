@@ -5,78 +5,28 @@
     <meta charset="utf-8">
     <title>pingFlaming</title>
     <meta name="description" content="to-do">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style-log.css">
 </head>
 
 
 <body>
-    <section class="nav-bar" id="navBar">
-        <div>
-            <input class="search" id="search" type="text" name="search" placeholder="Szukaj...">
-        </div>
-        <div>
-            <img class="logo" src="../img/logo.png">
-        </div>
-        <div class="user">
-            <img class="user-photo" id="avatar" src="./yyy.jpg">
-            <span class="user-nick" id="nickName">...</span>
-        </div>
-    </section>
-
-    <section class="tag-bar" id="tag">
-        <div>
-            
-            <ul>
-                <h3>Tagi:</h3>
-                <li>ping</li>
-                <li>Flaming</li>
-                <li>ToDoList</li>
-            </ul>
+    <section class="login-panel">
+        <div class="log-in">
+            <form action="/src/html/main.html">
+                <h2>Log in</h2>
+                <div class="log-input">
+                    <input type="text" placeholder="login">
+                </div>
+                <div class="pass-input">
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="btn-submit">
+                    <input type="submit" value="Submit">
+                </div>
+                <a href="http://localhost:3000/registration">Create an account</a>
+            </form>
         </div>
     </section>
-
-    <section class="main-list" id="mainList">
-        <div>
-            <title>Title1</title>
-            <div class="list-header">Do zrobienia</div>
-            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
-            <div class="list-button" id="listButton">
-                <button type="button" id="edit"><img src=".png"></button>
-                <button type="button" id="delete"><img src=".png"></button>
-            </div>
-        </div>
-        <div>
-            <title>Title1</title>
-            <div class="list-header">W trakcie</div>
-            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
-            <div class="list-button" id="listButton">
-                <button type="button" id="edit"><img src=".png"></button>
-                <button type="button" id="delete"><img src=".png"></button>
-            </div>
-        </div>
-        <div>
-            <title>Title1</title>
-            <div class="list-header">Gotowe</div>
-            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
-            <div class="list-button" id="listButton">
-                <button type="button" id="edit"><img src=".png"></button>
-                <button type="button" id="delete"><img src=".png"></button>
-            </div>
-        </div>
-        <div>
-            <title>Title1</title>
-            <div class="list-header">Dodaj nową kolumnę</div>
-            <textarea class="content" placeholder="Wprowadź tytuł tasku"></textarea>
-            <div class="list-button" id="listButton">
-                <button type="button" id="edit"><img src=".png"></button>
-                <button type="button" id="delete"><img src=".png"></button>
-            </div>
-        </div>
-    </section>
-    <div class="add">
-        <button type="button" id="create"><img src="../icons/simple.png"></button>
-    </div>
 
     <script src="/src/js/script.js"></script>
 </body>
