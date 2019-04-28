@@ -65,6 +65,7 @@ form label {
     border: solid 2px #5e5d77;
     font-size: 14px;
     padding-left: 16px;
+    outline: none;
 }
 
 .log-input, .pass-input {
