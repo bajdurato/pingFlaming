@@ -16,6 +16,11 @@ body {
     margin-top: 80px;
 }
 
+.logo img {
+    width: auto;
+    height: 106px;
+}
+
 .log-in {
     display: flex;
     justify-content: space-between;
@@ -88,6 +93,10 @@ button {
     color: #ffffff;
     letter-spacing: 0.7px;
     outline: none;
+}
+
+button:hover {
+    background:#ff78a1;
 }
 
 .links {
