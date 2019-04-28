@@ -1,10 +1,10 @@
-const Task = require('../models/task');
+const { Task } = require('../models/task');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const tasks = await Task.find();
+    const tasks = await Task.find().sort('title');
     res.send(tasks);
 });
 
@@ -17,13 +17,13 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    let task = new Task({
+    const task = new Task({
         title: req.body.title,
         isCompleted: req.body.isCompleted,
         tags: req.body.tags
     });
 
-    task = await task.save();
+    await task.save();
     res.send(task);
 });
 

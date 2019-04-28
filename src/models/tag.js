@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Tag = mongoose.model('Tag', new mongoose.Schema({
+const Tag = mongoose.model('Tags', new mongoose.Schema({
     title: {
         type: String,
         required: true

@@ -1,4 +1,4 @@
-const Tag = require('../models/tag');
+const { Tag } = require('../models/tag');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
     let tag = new Tag({
         title: req.body.title,
         color: req.body.color,
-        tags: req.body.tags
+        tasks: req.body.tasks
     });
 
     tag = await tag.save();
@@ -31,7 +31,7 @@ router.put('/:id', async (req, res) => {
     const tag = await Tag.findByIdAndUpdate(req.params.id, {
         title: req.body.title,
         color: req.body.color,
-        tags: req.body.tags
+        tasks: req.body.tasks
     }, {
         new: true
     });
