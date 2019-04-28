@@ -23,7 +23,7 @@ router.post('/', async (req, res) => {
         tasks: req.body.tasks
     });
 
-    tag = await tag.save();
+    await tag.save();
     res.send(tag);
 });
 
