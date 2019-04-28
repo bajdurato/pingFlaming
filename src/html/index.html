@@ -6,6 +6,7 @@
     <title>pingFlaming</title>
     <meta name="description" content="to-do">
     <link rel="stylesheet" type="text/css" href="../css/style-log.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 
@@ -18,20 +19,24 @@
             <img class="flaming-left" src="../img/flaming-left.png">
             <form action="/src/html/.html">
                 <h4>Ping Flaming to narzędzie ułatwiające organizację Twojej pracy,<br>życia i wszystkiego, co potrzebuje organizacji.<br>Zaloguj się i działaj!</h4>
-                <div class="log-input">
+                <div>
                     <label for="login">Login</label>
-                    <input type="text" placeholder="Podaj swój login">
                 </div>
-                <div class="pass-input">
-                    <label for="login">Hasło</label>
-                    <input type="password" placeholder="Podaj swoje hasło">
+                <div class="log-input">
+                    <input type="login" placeholder="Podaj swój login">
                 </div>
                 <div>
+                    <label for="password">Hasło</label>
+                </div>
+                <div class="pass-input">
+                    <input type="password" placeholder="Podaj swoje hasło">
+                </div>
+                <div class="links">
                     <a href="http://localhost:3000/registration">Zarejestruj się!</a>
                     <a href="http://localhost:3000/forgot-password">Przypomnij hasło</a>
                 </div>
-                <div class="btn-submit">
-                    <input type="submit" value="Zaloguj mnie">
+                <div class="btn-login">
+                    <button type="button" id="log-in">Zaloguj</button>
                 </div>
             </form>
             <img class="flaming-right" src="../img/flaming-right.png">
