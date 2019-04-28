@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const engines = require('consolidate');
+const config = require('config');
 const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/nodekb')
@@ -30,6 +31,12 @@ app.get('/', function (req, res) {
 app.get('/registration', function (req, res) {
     res.render('register.html');
 })
+
+const tasks = require('./routes/tasks');
+const tags = require('./routes/tags');
+
+app.use('/api/tasks', tasks);
+app.use('/api/tags', tags);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
