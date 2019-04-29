@@ -83,3 +83,96 @@ li {
     background: #ce5b7c;
     border-radius: 50px;
 }
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border-radius: 8px;
+    width: 53%;
+    height: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-header {
+    background-color: #969dad;
+    box-sizing:border-box;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.modal-header h3 {
+    font-family: FiraSans;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fefefe;
+    margin-left: 40%;   
+}
+
+.modal-header img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+
+}
+
+.modal-body form {
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    color: #969dad;
+}
+
+.modal-footer {
+    display:flex;
+    justify-content: flex-end;
+    margin: 0 2% 2% 0;
+}
+
+.modal-footer .cancel {
+    background-color: transparent;
+    border: none;
+    color: #969dad;
+    font-size: 16px;
+    outline: none;
+}
+
+.modal-footer .submit {
+    /* width: 137px;
+    height: 24px; */
+    border-radius: 8px;
+    border: none;
+    background: #b9bfcc;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    outline: none;
+    padding: 1%;
+    margin: 0 0 0 2%;
+}
